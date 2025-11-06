@@ -1,0 +1,75 @@
+"use client"
+
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { cn } from "@/lib/utils"
+import { Home, User, BookOpen, Wrench, Briefcase, Archive, Mail, Menu, X } from "lucide-react"
+import Image from "next/image"
+import { useState } from "react"
+
+const navItems = [
+  { href: "/", label: "HOME", icon: Home },
+  { href: "/profile", label: "PROFILE", icon: User },
+  { href: "/biography", label: "BIOGRAPHY", icon: BookOpen },
+  { href: "/expertise", label: "EXPERTISE", icon: Wrench },
+  { href: "/portfolio", label: "PORTFOLIO", icon: Briefcase },
+  { href: "/track-record", label: "ARCHIVE", icon: Archive },
+  { href: "/contact", label: "CONTACT", icon: Mail },
+]
+
+export function SidebarNavigation() {
+  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="fixed left-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-lg bg-[#1a1d29] text-white lg:hidden"
+        aria-label="Toggle menu"
+      >
+        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+      </button>
+
+      {isOpen && (
+        <div className="fixed inset-0 z-40 bg-black/50 lg:hidden" onClick={() => setIsOpen(false)} aria-hidden="true" />
+      )}
+
+      <aside
+        className={cn(
+          "fixed left-0 top-0 z-50 h-screen w-[296px] border-r border-border bg-[#1a1d29] transition-transform duration-300 lg:translate-x-0",
+          isOpen ? "translate-x-0" : "-translate-x-full",
+        )}
+      >
+        {/* Profile Avatar */}
+        <div className="flex items-center justify-center border-b border-border py-8">
+          <div className="relative h-32 w-32">
+            <Image src="/gayatri-logo.png" alt="Gayatri Electricals and Electronics" fill className="object-contain" />
+          </div>
+        </div>
+
+        {/* Navigation Items */}
+        <nav className="flex flex-col">
+          {navItems.map((item) => {
+            const Icon = item.icon
+            const isActive = pathname === item.href
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className={cn(
+                  "flex items-center gap-4 px-8 py-4 text-sm font-medium tracking-wide transition-colors",
+                  isActive ? "bg-[#4a7cff] text-white" : "text-gray-400 hover:bg-[#252836] hover:text-white",
+                )}
+              >
+                <Icon className="h-5 w-5" />
+                <span>{item.label}</span>
+              </Link>
+            )
+          })}
+        </nav>
+      </aside>
+    </>
+  )
+}
