@@ -4,9 +4,9 @@ import Image from "next/image"
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-card">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-3">
+    <footer className="border-t border-border bg-gradient-to-b from-white to-blue-50/50">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-12 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
               <div className="relative h-12 w-12">
@@ -26,24 +26,24 @@ export function Footer() {
 
           <div>
             <h3 className="mb-4 text-sm font-semibold">Quick Links</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <Link href="/profile" className="hover:text-foreground">
+                <Link href="/profile" className="transition-colors hover:text-primary hover:translate-x-1 inline-block">
                   Profile
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="hover:text-foreground">
+                <Link href="/portfolio" className="transition-colors hover:text-primary hover:translate-x-1 inline-block">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/expertise" className="hover:text-foreground">
+                <Link href="/expertise" className="transition-colors hover:text-primary hover:translate-x-1 inline-block">
                   Expertise
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-foreground">
+                <Link href="/contact" className="transition-colors hover:text-primary hover:translate-x-1 inline-block">
                   Contact
                 </Link>
               </li>
@@ -52,22 +52,22 @@ export function Footer() {
 
           <div>
             <h3 className="mb-4 text-sm font-semibold">Contact</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <a href="tel:+916401450954" className="hover:text-foreground">
+            <ul className="space-y-3 text-sm text-muted-foreground">
+              <li className="flex items-center gap-3 group">
+                <Phone className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                <a href="tel:+916401450954" className="hover:text-primary transition-colors">
                   +91 6401450954
                 </a>
               </li>
-              <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <a href="tel:+917674950954" className="hover:text-foreground">
+              <li className="flex items-center gap-3 group">
+                <Phone className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                <a href="tel:+917674950954" className="hover:text-primary transition-colors">
                   +91 7674950954
                 </a>
               </li>
-              <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                <a href="mailto:gayatrielectricalworks@gmail.com" className="hover:text-foreground">
+              <li className="flex items-center gap-3 group">
+                <Mail className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                <a href="mailto:gayatrielectricalworks@gmail.com" className="hover:text-primary transition-colors break-all">
                   gayatrielectricalworks@gmail.com
                 </a>
               </li>

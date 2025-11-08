@@ -162,24 +162,32 @@ export default function ContactPage() {
           </div>
 
           {/* Stats Section */}
-          <div className="mt-16 rounded-lg border border-border bg-card p-8">
+          <div className="mt-16 rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 via-blue-50/50 to-indigo-50/50 p-8 shadow-lg">
             <h2 className="mb-8 text-center text-2xl font-bold">Our Track Record</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="text-center">
-                <div className="mb-2 text-3xl font-bold text-accent">1000+</div>
-                <div className="text-sm text-muted-foreground">Satisfied Clients</div>
+              <div className="text-center group">
+                <div className="mb-3 inline-block rounded-xl bg-gradient-to-br from-accent to-primary px-6 py-3 shadow-lg shadow-accent/20 transition-all group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-accent/30">
+                  <div className="text-4xl font-extrabold text-white">1000+</div>
+                </div>
+                <div className="text-sm font-medium text-muted-foreground">Satisfied Clients</div>
               </div>
-              <div className="text-center">
-                <div className="mb-2 text-3xl font-bold text-accent">500+</div>
-                <div className="text-sm text-muted-foreground">Projects Completed</div>
+              <div className="text-center group">
+                <div className="mb-3 inline-block rounded-xl bg-gradient-to-br from-primary to-accent px-6 py-3 shadow-lg shadow-primary/20 transition-all group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-primary/30">
+                  <div className="text-4xl font-extrabold text-white">500+</div>
+                </div>
+                <div className="text-sm font-medium text-muted-foreground">Projects Completed</div>
               </div>
-              <div className="text-center">
-                <div className="mb-2 text-3xl font-bold text-accent">1M+</div>
-                <div className="text-sm text-muted-foreground">SFT Area Worked</div>
+              <div className="text-center group">
+                <div className="mb-3 inline-block rounded-xl bg-gradient-to-br from-accent to-primary px-6 py-3 shadow-lg shadow-accent/20 transition-all group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-accent/30">
+                  <div className="text-4xl font-extrabold text-white">1M+</div>
+                </div>
+                <div className="text-sm font-medium text-muted-foreground">SFT Area Worked</div>
               </div>
-              <div className="text-center">
-                <div className="mb-2 text-3xl font-bold text-accent">₹10Cr+</div>
-                <div className="text-sm text-muted-foreground">Capex Managed</div>
+              <div className="text-center group">
+                <div className="mb-3 inline-block rounded-xl bg-gradient-to-br from-primary to-accent px-6 py-3 shadow-lg shadow-primary/20 transition-all group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-primary/30">
+                  <div className="text-4xl font-extrabold text-white">₹10Cr+</div>
+                </div>
+                <div className="text-sm font-medium text-muted-foreground">Capex Managed</div>
               </div>
             </div>
           </div>
