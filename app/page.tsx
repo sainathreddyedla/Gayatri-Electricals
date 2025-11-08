@@ -7,33 +7,29 @@ export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b border-border">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/images/hero-medical-equipment.jpg"
-            alt="Medical equipment installation"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/80" />
+      <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+        <div className="absolute inset-0 z-0 opacity-5">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(59,130,246,0.1),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(99,102,241,0.1),transparent_50%)]" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm">
-              <Award className="h-4 w-4 text-accent" />
-              <span className="text-muted-foreground">Established 1998</span>
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border-2 border-primary/20 bg-primary/5 px-5 py-2.5 text-sm backdrop-blur-sm transition-all hover:border-primary/30 hover:bg-primary/10">
+              <Award className="h-4 w-4 text-primary" />
+              <span className="font-medium text-foreground">Established 1998</span>
             </div>
 
-            <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight sm:text-6xl">
+            <h1 className="mb-8 text-balance text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
               Gayatri Electricals and Electronics
             </h1>
 
-            <p className="mb-8 text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
+            <p className="mb-8 text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl max-w-2xl mx-auto">
               We take raw structures and turn them into ready to open spaces. From Electrical, Plumbing to carpentry and
               ACP work, and Medical equipment installation we handle everything from start to finish.
             </p>
 
-            <p className="mb-10 text-pretty text-base leading-relaxed text-muted-foreground">
+            <p className="mb-12 text-pretty text-base leading-relaxed text-muted-foreground max-w-2xl mx-auto">
               Our goal is to deliver complete, reliable, and well-finished projects that clients can trust. We
               coordinate every detail, solve on-site challenges fast, and keep timelines clear. When we're done, a bare
               structure becomes a functional, polished space ready for business.
@@ -55,55 +51,63 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="border-b border-border bg-card py-16">
+      <section className="border-b border-border bg-gradient-to-b from-white to-blue-50/30 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="text-center">
-              <div className="mb-2 flex items-center justify-center">
-                <Building2 className="h-8 w-8 text-primary" />
+            <div className="text-center group">
+              <div className="mb-4 flex items-center justify-center">
+                <div className="rounded-2xl bg-primary/10 p-4 transition-all group-hover:bg-primary/20 group-hover:scale-110">
+                  <Building2 className="h-8 w-8 text-primary" />
+                </div>
               </div>
-              <div className="mb-1 text-4xl font-bold text-accent">25+</div>
-              <div className="text-sm text-muted-foreground">Years of Experience</div>
+              <div className="mb-2 text-5xl font-bold text-primary">25+</div>
+              <div className="text-sm font-medium text-muted-foreground">Years of Experience</div>
             </div>
 
-            <div className="text-center">
-              <div className="mb-2 flex items-center justify-center">
-                <Users className="h-8 w-8 text-primary" />
+            <div className="text-center group">
+              <div className="mb-4 flex items-center justify-center">
+                <div className="rounded-2xl bg-accent/10 p-4 transition-all group-hover:bg-accent/20 group-hover:scale-110">
+                  <Users className="h-8 w-8 text-accent" />
+                </div>
               </div>
-              <div className="mb-1 text-4xl font-bold text-accent">1000+</div>
-              <div className="text-sm text-muted-foreground">Clients Served</div>
+              <div className="mb-2 text-5xl font-bold text-accent">1000+</div>
+              <div className="text-sm font-medium text-muted-foreground">Clients Served</div>
             </div>
 
-            <div className="text-center">
-              <div className="mb-2 flex items-center justify-center">
-                <Award className="h-8 w-8 text-primary" />
+            <div className="text-center group">
+              <div className="mb-4 flex items-center justify-center">
+                <div className="rounded-2xl bg-primary/10 p-4 transition-all group-hover:bg-primary/20 group-hover:scale-110">
+                  <Award className="h-8 w-8 text-primary" />
+                </div>
               </div>
-              <div className="mb-1 text-4xl font-bold text-accent">500+</div>
-              <div className="text-sm text-muted-foreground">Projects Managed</div>
+              <div className="mb-2 text-5xl font-bold text-primary">500+</div>
+              <div className="text-sm font-medium text-muted-foreground">Projects Managed</div>
             </div>
 
-            <div className="text-center">
-              <div className="mb-2 flex items-center justify-center">
-                <Zap className="h-8 w-8 text-primary" />
+            <div className="text-center group">
+              <div className="mb-4 flex items-center justify-center">
+                <div className="rounded-2xl bg-accent/10 p-4 transition-all group-hover:bg-accent/20 group-hover:scale-110">
+                  <Zap className="h-8 w-8 text-accent" />
+                </div>
               </div>
-              <div className="mb-1 text-4xl font-bold text-accent">1M+</div>
-              <div className="text-sm text-muted-foreground">SFT Area Worked</div>
+              <div className="mb-2 text-5xl font-bold text-accent">1M+</div>
+              <div className="text-sm font-medium text-muted-foreground">SFT Area Worked</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Overview */}
-      <section className="py-24">
+      <section className="py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">Comprehensive Services</h2>
+            <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl text-foreground">Comprehensive Services</h2>
             <p className="mx-auto max-w-2xl text-pretty text-lg text-muted-foreground">
               End-to-end turnkey project management and execution services
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 title: "Design",
@@ -132,10 +136,13 @@ export default function HomePage() {
             ].map((service, index) => (
               <div
                 key={index}
-                className="rounded-lg border border-border bg-card p-6 transition-colors hover:border-primary"
+                className="group relative rounded-2xl border-2 border-border bg-white p-8 transition-all hover:border-primary/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10"
               >
-                <h3 className="mb-2 text-lg font-semibold">{service.title}</h3>
-                <p className="text-sm text-muted-foreground">{service.description}</p>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="relative">
+                  <h3 className="mb-3 text-xl font-semibold text-foreground group-hover:text-primary transition-colors">{service.title}</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{service.description}</p>
+                </div>
               </div>
             ))}
           </div>

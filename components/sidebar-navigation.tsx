@@ -25,7 +25,7 @@ export function SidebarNavigation() {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed left-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-lg bg-[#1a1d29] text-white lg:hidden"
+        className="fixed left-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-lg bg-sidebar border border-sidebar-border text-sidebar-foreground transition-all hover:bg-sidebar-accent lg:hidden"
         aria-label="Toggle menu"
       >
         {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -37,19 +37,19 @@ export function SidebarNavigation() {
 
       <aside
         className={cn(
-          "fixed left-0 top-0 z-50 h-screen w-[296px] border-r border-border bg-[#1a1d29] transition-transform duration-300 lg:translate-x-0",
+          "fixed left-0 top-0 z-50 h-screen w-[296px] border-r border-sidebar-border bg-sidebar transition-transform duration-300 lg:translate-x-0",
           isOpen ? "translate-x-0" : "-translate-x-full",
         )}
       >
         {/* Profile Avatar */}
-        <div className="flex items-center justify-center border-b border-border py-8">
-          <div className="relative h-32 w-32">
+        <div className="flex items-center justify-center border-b border-sidebar-border py-10 px-6">
+          <div className="relative h-32 w-32 transition-transform duration-300 hover:scale-105">
             <Image src="/gayatri-logo.png" alt="Gayatri Electricals and Electronics" fill className="object-contain" />
           </div>
         </div>
 
         {/* Navigation Items */}
-        <nav className="flex flex-col">
+        <nav className="flex flex-col py-4 px-3">
           {navItems.map((item) => {
             const Icon = item.icon
             const isActive = pathname === item.href
@@ -59,12 +59,17 @@ export function SidebarNavigation() {
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "flex items-center gap-4 px-8 py-4 text-sm font-medium tracking-wide transition-colors",
-                  isActive ? "bg-[#4a7cff] text-white" : "text-gray-400 hover:bg-[#252836] hover:text-white",
+                  "flex items-center gap-4 px-6 py-3.5 my-1 text-sm font-medium tracking-wide transition-all rounded-lg group",
+                  isActive
+                    ? "bg-sidebar-primary text-sidebar-primary-foreground shadow-md"
+                    : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground hover:translate-x-1",
                 )}
               >
-                <Icon className="h-5 w-5" />
-                <span>{item.label}</span>
+                <Icon className={cn(
+                  "h-5 w-5 transition-all",
+                  isActive ? "scale-110" : "group-hover:scale-110"
+                )} />
+                <span className="text-[13px] font-medium">{item.label}</span>
               </Link>
             )
           })}
