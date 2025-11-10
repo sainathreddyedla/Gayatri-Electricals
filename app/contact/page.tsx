@@ -39,13 +39,13 @@ export default function ContactPage() {
                       <h3 className="mb-1 font-semibold">Phone</h3>
                       <div className="space-y-1">
                         <div>
-                          <a href="tel:+916401450954" className="text-muted-foreground hover:text-foreground">
-                            +91 6401450954
+                          <a href="tel:+917674950954" className="text-muted-foreground hover:text-foreground">
+                            +91 7674950954
                           </a>
                         </div>
                         <div>
-                          <a href="tel:+917674950954" className="text-muted-foreground hover:text-foreground">
-                            +91 7674950954
+                          <a href="tel:+916401450954" className="text-muted-foreground hover:text-foreground">
+                            +91 6401450954
                           </a>
                         </div>
                       </div>
