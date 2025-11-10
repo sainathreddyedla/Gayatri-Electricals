@@ -55,14 +55,14 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-3 group">
                 <Phone className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
-                <a href="tel:+916401450954" className="hover:text-primary transition-colors">
-                  +91 6401450954
+                <a href="tel:+917674950954" className="hover:text-primary transition-colors">
+                  +91 7674950954
                 </a>
               </li>
               <li className="flex items-center gap-3 group">
                 <Phone className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
-                <a href="tel:+917674950954" className="hover:text-primary transition-colors">
-                  +91 7674950954
+                <a href="tel:+916401450954" className="hover:text-primary transition-colors">
+                  +91 6401450954
                 </a>
               </li>
               <li className="flex items-center gap-3 group">
