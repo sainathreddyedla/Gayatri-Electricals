@@ -56,7 +56,7 @@ export default function ProfilePage() {
                 </div>
 
                 <p className="text-pretty leading-relaxed text-muted-foreground">
-                  With 30 years of experience in Construction and Utility Services, Sampath leads with deep technical
+                  With 25 years of experience in Construction and Utility Services, Sampath leads with deep technical
                   expertise and on ground execution knowledge. His leadership ensures that every project meets the
                   highest standards of quality, safety, and reliability.
                 </p>
@@ -69,7 +69,7 @@ export default function ProfilePage() {
             <h3 className="mb-6 text-center text-2xl font-bold">Combined Expertise</h3>
             <div className="grid gap-6 md:grid-cols-3">
               <div className="text-center">
-                <div className="mb-2 text-3xl font-bold text-accent">30+</div>
+                <div className="mb-2 text-3xl font-bold text-accent">25+</div>
                 <div className="text-sm text-muted-foreground">Years Combined Experience</div>
               </div>
               <div className="text-center">
