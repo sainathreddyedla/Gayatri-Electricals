@@ -10,10 +10,10 @@ import { useState } from "react"
 const navItems = [
   { href: "/", label: "HOME", icon: Home },
   { href: "/profile", label: "PROFILE", icon: User },
+  { href: "/track-record", label: "TRACK RECORD", icon: Archive },
   { href: "/biography", label: "BIOGRAPHY", icon: BookOpen },
   { href: "/expertise", label: "EXPERTISE", icon: Wrench },
   { href: "/portfolio", label: "PORTFOLIO", icon: Briefcase },
-  { href: "/track-record", label: "ARCHIVE", icon: Archive },
   { href: "/contact", label: "CONTACT", icon: Mail },
 ]
 
