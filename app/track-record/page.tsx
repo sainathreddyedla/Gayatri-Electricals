@@ -76,7 +76,7 @@ export default function TrackRecordPage() {
               <div className="text-center">
                 <div className="mb-3 text-2xl font-bold text-primary">Education</div>
                 <p className="text-sm text-muted-foreground">
-                  Completed projects for leading schools including DPS, Jubilee Public School, and Hyderabad Public
+                  Completed projects for leading schools including Delhi Public School, Jubilee Public School, and Hyderabad Public
                   School
                 </p>
               </div>
