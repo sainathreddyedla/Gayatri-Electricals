@@ -80,20 +80,20 @@ const expertiseDetails: Record<
     ],
     benefits: ["Improved aesthetics", "Better acoustics", "Energy-efficient lighting", "Easy maintenance access"],
   },
-  "acp-cladding": {
-    title: "ACP Cladding & Fabrication",
-    description:
-      "Durable and aesthetic exterior aluminum composite panel construction that enhances building appearance while providing weather protection.",
-    details: [
-      "Aluminum composite panel installation",
-      "Custom fabrication services",
-      "Weather-resistant exterior finish",
-      "Color and design customization",
-      "Structural support systems",
-      "Long-lasting protection",
-    ],
-    benefits: ["Enhanced curb appeal", "Weather protection", "Low maintenance", "Cost-effective solution"],
-  },
+  // "acp-cladding": {
+  //   title: "ACP Cladding & Fabrication",
+  //   description:
+  //     "Durable and aesthetic exterior aluminum composite panel construction that enhances building appearance while providing weather protection.",
+  //   details: [
+  //     "Aluminum composite panel installation",
+  //     "Custom fabrication services",
+  //     "Weather-resistant exterior finish",
+  //     "Color and design customization",
+  //     "Structural support systems",
+  //     "Long-lasting protection",
+  //   ],
+  //   benefits: ["Enhanced curb appeal", "Weather protection", "Low maintenance", "Cost-effective solution"],
+  // },
   "medical-devices": {
     title: "Medical Devices Installation",
     description:

@@ -92,6 +92,12 @@ export default function TrackRecordPage() {
                   Delivered turnkey solutions for offices including MEDTEC, MetaMinds, and Gangavaram Port
                 </p>
               </div>
+              <div className="text-center">
+                <div className="mb-3 text-2xl font-bold text-primary">Retail</div>
+                <p className="text-sm text-muted-foreground">
+                  Complete store fitting ready to operate
+                </p>
+              </div>
             </div>
           </div>
         </div>
