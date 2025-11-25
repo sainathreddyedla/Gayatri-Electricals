@@ -44,7 +44,7 @@ export function SidebarNavigation() {
         {/* Profile Avatar */}
         <div className="flex items-center justify-center border-b border-sidebar-border py-10 px-6">
           <div className="relative h-32 w-32 transition-transform duration-300 hover:scale-105">
-            <Image src="/gayatri-logo.png" alt="Gayatri Electricals and Electronics" fill className="object-contain" />
+            <Image src="/raghukula-logo.png" alt="Raghukula Design & Build Solutions" fill className="object-contain scale-[2]" />
           </div>
         </div>
 

@@ -23,7 +23,7 @@ export default function HomePage() {
             </div>
 
             <h1 className="mb-8 text-balance text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-              Gayatri Electricals and Electronics
+              Raghukula Design & Build Solutions Private Limited
             </h1>
 
             <p className="mb-8 text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl max-w-2xl mx-auto">

@@ -28,7 +28,7 @@ export function Navigation() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
               <span className="text-lg font-bold text-primary-foreground">GE</span>
             </div>
-            <span className="hidden text-lg font-semibold sm:inline-block">Gayatri Electricals and Electronics</span>
+            <span className="hidden text-lg font-semibold sm:inline-block">Raghukula Design & Build Solutions</span>
           </Link>
 
           {/* Desktop Navigation */}
