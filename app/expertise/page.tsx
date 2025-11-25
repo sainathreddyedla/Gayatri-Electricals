@@ -76,14 +76,14 @@ export default function ExpertisePage() {
         "Gypsum, grid, and decorative ceiling systems with integrated lighting for modern interiors.",
       tags: ["Gypsum", "Grid Systems", "Integrated Lighting"],
     },
-    {
-      icon: Paintbrush,
-      images: ["/images/expertise/acp-cladding.jpg"],
-      title: "ACP Cladding & Fabrication",
-      description:
-        "Durable and aesthetic exterior aluminum composite panel construction.",
-      tags: ["ACP Panels", "Fabrication", "Exterior Finish"],
-    },
+    // {
+    //   icon: Paintbrush,
+    //   images: ["/images/expertise/acp-cladding.jpg"],
+    //   title: "ACP Cladding & Fabrication",
+    //   description:
+    //     "Durable and aesthetic exterior aluminum composite panel construction.",
+    //   tags: ["ACP Panels", "Fabrication", "Exterior Finish"],
+    // },
     {
       icon: Activity,
       images: [

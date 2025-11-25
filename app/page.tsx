@@ -52,7 +52,7 @@ export default function HomePage() {
                   full accountability
                 </span>{" "}
                 throughout your project. No coordination headaches, no
-                finger-pointing—just one team delivering on every promise from
+                finger pointing, just one team delivering on every promise from
                 start to finish.
               </p>
             </div>

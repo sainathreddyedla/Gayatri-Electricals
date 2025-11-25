@@ -78,8 +78,8 @@ export default function BiographyPage() {
               With decades of on-ground experience backed by modern project
               management practices, we ensure every project is delivered with
               clarity, control, and craftsmanship. Our collaborative and
-              enterprising mindset — combined with national business strength
-              and diverse industry expertise — empowers us to deliver
+              enterprising mindset, combined with national business strength
+              and diverse industry expertise, empowers us to deliver
               exceptional outcomes on every single project, every single time.
             </p>
           </div>
