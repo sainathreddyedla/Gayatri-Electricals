@@ -21,10 +21,13 @@ export default function BiographyPage() {
     "Plumbing",
     "HVAC",
     "Carpentry",
-    "False ceiling",
+    "False Ceiling",
     "Painting",
     "Flooring",
-    "ACP cladding",
+    "ACP Cladding",
+    "Merchandising Setup",
+    "Shop Floor Development",
+    "Visual Merchandising",
   ];
 
   return (
