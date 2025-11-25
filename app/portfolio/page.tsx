@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Footer } from "@/components/footer"
-import { GraduationCap, Building2, Heart } from "lucide-react"
+import { GraduationCap, Building2, Heart, Building } from "lucide-react"
 import { ClientLogoCarousel } from "@/components/client-logo-carousel"
 
 export default function PortfolioPage() {
@@ -44,11 +44,21 @@ export default function PortfolioPage() {
         { name: "Hetero Healthcare", logo: "/images/clients/hetero-healthcare.png" },
       ],
     },
+    {
+      icon: Building,
+      title: "Retail",
+      description:
+        "Complete turnkey development of retail outlets, including interiors, MEP works, fixtures, branding elements, and final handover as a ready to open store.",
+      clients: [
+        { name: "Mini Klub", logo: "/images/clients/mini-klub.png" },
+        { name: "FirstCry", logo: "/images/clients/firstcry.png" },
+      ],
+    },
   ]
 
   return (
     <div className="flex min-h-screen flex-col">
-      <section className="border-b border-border bg-gradient-to-b from-background to-muted/20 py-16">
+      <section className="border-b border-border bg-gradient-to-b from-background to-muted/20 py-14.5">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="mb-4 text-balance text-4xl font-bold tracking-tight sm:text-5xl">Our Portfolio</h1>

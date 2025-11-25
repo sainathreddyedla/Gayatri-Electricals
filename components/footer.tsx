@@ -11,13 +11,13 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <div className="relative h-12 w-12">
                 <Image
-                  src="/gayatri-logo.png"
-                  alt="Gayatri Electricals and Electronics"
+                  src="/raghukula-logo.png"
+                  alt="Raghukula Design & Build Solutions Private Limited"
                   fill
-                  className="object-contain"
+                  className="object-contain scale-[2.5]"
                 />
               </div>
-              <span className="text-lg font-semibold">Gayatri Electricals and Electronics</span>
+              <span className="text-lg font-semibold">Raghukula Design & Build Solutions</span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">
               Transforming bare structures into fully operational spaces since 1998.
@@ -67,8 +67,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 group">
                 <Mail className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
-                <a href="mailto:gayatrielectricalworks@gmail.com" className="hover:text-primary transition-colors break-all">
-                  gayatrielectricalworks@gmail.com
+                <a href="mailto:contact@raghukula.in" className="hover:text-primary transition-colors break-all">
+                  contact@raghukula.in
                 </a>
               </li>
             </ul>
@@ -76,7 +76,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Gayatri Electricals and Electronics. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Raghukula Design & Build Solutions Private Limiter. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,16 +1,19 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Footer } from "@/components/footer"
-import { GraduationCap, Briefcase } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { Footer } from "@/components/footer";
+import { GraduationCap, Briefcase } from "lucide-react";
 
 export default function ProfilePage() {
   return (
     <div className="flex min-h-screen flex-col">
-      <section className="border-b border-border bg-gradient-to-b from-background to-muted/20 py-16">
+      <section className="border-b border-border bg-gradient-to-b from-background to-muted/20 py-14.5">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-4 text-balance text-4xl font-bold tracking-tight sm:text-5xl">Leadership Profile</h1>
+            <h1 className="mb-4 text-balance text-4xl font-bold tracking-tight sm:text-5xl">
+              Leadership Profile
+            </h1>
             <p className="text-pretty text-lg text-muted-foreground">
-              Meet the experienced professionals driving excellence in every project
+              Meet the experienced professionals driving excellence in every
+              project
             </p>
           </div>
         </div>
@@ -27,17 +30,22 @@ export default function ProfilePage() {
                     <GraduationCap className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <div className="mb-1 text-sm font-medium text-accent">Head</div>
+                    <div className="mb-1 text-sm font-medium text-accent">
+                      Head
+                    </div>
                     <h2 className="text-2xl font-bold">Sainath Reddy Edla</h2>
                   </div>
                 </div>
 
                 <p className="text-pretty leading-relaxed text-muted-foreground">
-                  Master's in Engineering Management with specialized expertise in Supply Chain Management, Strategic
-                  Sourcing, and Data Analytics. Proven track record in vendor management, cost optimization, and
-                  end-to-end project execution. Skilled in leveraging ERP systems (SAP, NetSuite), advanced analytics
-                  (Python, SQL, Power BI, Tableau), and Lean Six Sigma methodologies to drive operational efficiency and
-                  deliver measurable business results across complex supply chain operations.
+                  Master’s in Engineering Management with hands-on experience
+                  delivering turnkey project management services across
+                  commercial projects. Managed full project lifecycles from
+                  initial client requirement gathering to site execution and
+                  handover ensuring timelines, quality, and budget targets.
+                  Experience includes coordinating with architects, MEP teams,
+                  contractors, and vendors while maintaining clear communication
+                  with clients at every stage
                 </p>
               </CardContent>
             </Card>
@@ -50,15 +58,19 @@ export default function ProfilePage() {
                     <Briefcase className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <div className="mb-1 text-sm font-medium text-accent">Director</div>
+                    <div className="mb-1 text-sm font-medium text-accent">
+                      Director
+                    </div>
                     <h2 className="text-2xl font-bold">Sampath Reddy Edla</h2>
                   </div>
                 </div>
 
                 <p className="text-pretty leading-relaxed text-muted-foreground">
-                  With 25 years of experience in Construction and Utility Services, Sampath leads with deep technical
-                  expertise and on ground execution knowledge. His leadership ensures that every project meets the
-                  highest standards of quality, safety, and reliability.
+                  With 25 years of experience in Construction and Utility
+                  Services, Sampath leads with deep technical expertise and on
+                  ground execution knowledge. His leadership ensures that every
+                  project meets the highest standards of quality, safety, and
+                  reliability.
                 </p>
               </CardContent>
             </Card>
@@ -66,19 +78,29 @@ export default function ProfilePage() {
 
           {/* Additional Info */}
           <div className="mt-12 rounded-lg border border-border bg-card p-8">
-            <h3 className="mb-6 text-center text-2xl font-bold">Combined Expertise</h3>
+            <h3 className="mb-6 text-center text-2xl font-bold">
+              Combined Expertise
+            </h3>
             <div className="grid gap-6 md:grid-cols-3">
               <div className="text-center">
                 <div className="mb-2 text-3xl font-bold text-accent">25+</div>
-                <div className="text-sm text-muted-foreground">Years Combined Experience</div>
+                <div className="text-sm text-muted-foreground">
+                  Years Combined Experience
+                </div>
               </div>
               <div className="text-center">
                 <div className="mb-2 text-3xl font-bold text-accent">500+</div>
-                <div className="text-sm text-muted-foreground">Projects Led</div>
+                <div className="text-sm text-muted-foreground">
+                  Projects Led
+                </div>
               </div>
               <div className="text-center">
-                <div className="mb-2 text-3xl font-bold text-accent">₹10Cr+</div>
-                <div className="text-sm text-muted-foreground">Capex Managed</div>
+                <div className="mb-2 text-3xl font-bold text-accent">
+                  ₹10Cr+
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  Capex Managed
+                </div>
               </div>
             </div>
           </div>
@@ -87,5 +109,5 @@ export default function ProfilePage() {
 
       <Footer />
     </div>
-  )
+  );
 }

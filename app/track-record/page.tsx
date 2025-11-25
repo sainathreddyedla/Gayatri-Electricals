@@ -38,7 +38,7 @@ export default function TrackRecordPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <section className="border-b border-border bg-gradient-to-b from-background to-muted/20 py-16">
+      <section className="border-b border-border bg-gradient-to-b from-background to-muted/20 py-14.5">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="mb-4 text-balance text-4xl font-bold tracking-tight sm:text-5xl">Track Record</h1>
